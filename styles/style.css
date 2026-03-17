@@ -50,7 +50,6 @@ body{
     color: #000000;
     border: none;
     border-radius: 30px;
-    width: 189px;
-    height: 53px;
-    margin: 23px 30px 24px; 
+    margin: 23px 30px 24px;
+    padding: 15px 36px 14px; 
 }

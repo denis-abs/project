@@ -5,11 +5,19 @@
 }
 
 body{
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
 }
+
+/* header */
 .header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: center;
+
+    backdrop-filter: blur(20px);
 }
 
 .header__container{
@@ -23,7 +31,8 @@ body{
     border-radius: 50px;
     background-color: rgba(26, 26, 26, 0.6);
 
-    margin: 60px 222px 0px 218px;
+    margin-top: 60px;
+    margin-inline: auto;
 }
 
 .header__nav{
@@ -53,7 +62,7 @@ body{
     font-size: 24px;
     line-height: normal;
     text-decoration: none;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 .header__button{
     font-family: "Inter", sans-serif;
@@ -66,3 +75,238 @@ body{
     border-radius: 30px;
     padding: 15px 36px 14px; 
 }
+
+/* main */
+
+/* section one */
+.hero{
+    position: relative;
+}
+
+.hero__welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 841px;
+    margin: 0 auto;
+}
+
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-top: 200px;
+}
+
+.hero__title{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 72px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero__desc{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    margin-top: 90px;
+}
+
+.hero__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    max-width: 200px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+
+    border: none;
+    border-radius: 12px;
+}
+
+.hero__button--google{
+    padding: 13px 21px;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(126, 126, 126, 0.29);
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero__button--apple{
+    padding: 15px 27px 13px 26px;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.9);
+    color: rgba(0, 0, 0, 1);
+}
+
+.hero__button--google img{
+    width: 40px;
+    height: 40px;
+}
+
+.hero__button--apple img{
+    width: 31px;
+    height: 38px;
+}
+
+
+/*hero__card */
+
+.hero__stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 1080px;
+    margin: 200px auto 0;
+}
+
+.hero__card{
+    position: relative;
+
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+
+    padding-top: 55px;
+    padding-bottom: 68px;
+    padding-left: 60px;
+}
+
+.hero__icon{
+    max-width: 95px;
+    max-height: 95px;
+
+    position: absolute;
+    right: -26px;
+    top: -30px;
+
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 160px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.hero__icon--red{
+    padding: 21px 27px 20px 27px;
+}
+
+.hero__icon--purple{
+    padding: 27px 21px 25px 21px;
+
+}
+
+.hero__icon--green{
+    padding: 26px 21px 24px 21px;
+}
+
+.hero__icon--yellow{
+    padding: 26px 21px 25px 21px;
+}
+
+.hero__card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 57px;
+}
+
+.hero__value{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero__unit{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__label{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+.hero__card--red strong{
+    background: linear-gradient(90deg, #C5882D 0%, #B72346 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.hero__card--purple strong{
+    background: linear-gradient(90deg, #979DD8 0%, #4431BA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.hero__card--green strong{
+    background: linear-gradient(90deg, #236D49 0%, #30AE35 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.hero__card--yellow strong{
+    background: linear-gradient(90deg, #705612 0%, #EDB628 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+/* footer section one */
+.hero__slogan{
+    max-width: 1045px;
+    margin: 200px auto 270px ;
+}
+
+.hero__slogan-title{
+    font-family: "Inter", sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+
+    margin-bottom: 153px;
+}
+
+.hero__slogan-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 170;
+}
+/* section two */
+

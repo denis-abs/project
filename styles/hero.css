@@ -327,7 +327,7 @@
     align-items: flex-start;
     justify-self: center;
 
-    gap: 170px;
+    gap: 21px;
 }
 
 .hero__step{
@@ -354,31 +354,15 @@
 }
 
 .hero__line{
-    position: absolute;
-
-    z-index: 1;
-}
-
-.hero__line--1{
-    top: 60px;
-    left: 256px;
-}
-
-.hero__line--2{
-    top: 60px;
-    right: 256px;
+    margin-top: 54px;
 }
 
 /* section two */
 
 .downloader {
-    padding: 120px 0;
-}
-
-.downloader__container {
     max-width: 1148px;
     margin: 0 auto;
-
+    
     display: flex;
     flex-direction: column;
     gap: 203px;

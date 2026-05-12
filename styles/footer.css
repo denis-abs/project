@@ -1,10 +1,6 @@
 .partners {
     position: relative;
     padding: 200px 0;
-}
-
-.partners__container {
-    position: relative;
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -14,11 +10,10 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    flex-wrap: wrap;
 }
 
-.partners__column-1{
-    margin: 0 auto 20px;
-}
 .partners__item {
     width: 160px;
     height: 160px;
@@ -31,6 +26,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-shrink: 0;
 }
 
 .footer__glow{
@@ -54,7 +51,7 @@
     bottom: 50px;
 }
 
-.team__container{
+.team{
     max-width: 1115px;
     margin: 0 auto;
     position: relative;
@@ -125,13 +122,8 @@
 }
 
 .faq{
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
-
-.faq__container{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 200px auto 200px;
 }
 
 .faq__title{
